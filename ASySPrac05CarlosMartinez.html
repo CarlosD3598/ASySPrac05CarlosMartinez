@@ -1,0 +1,151 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>ASySPrac05CarlosMartinez</title><meta name="generator" content="MATLAB 9.4"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2018-11-23"><meta name="DC.source" content="ASySPrac05CarlosMartinez.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h1></h1><!--introduction--><p><img vspace="5" hspace="5" src="portada.png" alt=""> </p><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Objetivos</a></li><li><a href="#2">Desarrollo</a></li><li><a href="#3">Ejemplo 6.1</a></li><li><a href="#4">Ejemplo 6.2</a></li><li><a href="#5">Ejemplo 6.4</a></li><li><a href="#6">Apendice A</a></li><li><a href="#7">Referencias</a></li></ul></div><h2 id="1">Objetivos</h2><h2 id="2">Desarrollo</h2><p>Se plantea la soluci&oacute;n a siete problemas, donde cada uno requiere del uso de Matlab como herramienta de c&aacute;lculo y an&aacute;lisis.</p><p>Para cada problema debes de realizar</p><div><ol><li>Realizar el programa de la serie que se indica</li><li>Gr&aacute;fica de la serie de Fourier en un intervalo que muestre 5 repeticiones</li><li>Gr&aacute;fica de la se&ntilde;al y la serie de Fourier para 4 armonicos</li><li>Gr&aacute;fica del error</li><li>Gr&aacute;fica de la energ&iacute;a del error</li><li>Espectro de magnitud  para 4 armonicos</li><li>Espectro de fase para 4 armonicos</li><li>Todo lo anterior para 15 armonicos</li></ol></div><h2 id="3">Ejemplo 6.1</h2><p>Con serie  y espectro trigonometrico, no es necesario entregar el c&oacute;digo, solo la aplicaci&oacute;n al problema especifico, debe de indicar la funci&oacute;n y los valores de sus coeficientes (sin incluir el procedimiento)</p><div><ul><li>Funci&oacute;n: <img src="ASySPrac05CarlosMartinez_eq13118065478009486998.png" alt="$e^{-t/2}$"></li><li><img src="ASySPrac05CarlosMartinez_eq11824749991346166048.png" alt="$T_{0}=\pi$">; <img src="ASySPrac05CarlosMartinez_eq08880996788032574097.png" alt="$\omega_{0}=2$"></li><li><img src="ASySPrac05CarlosMartinez_eq08880996788032574097.png" alt="$\omega_{0}=2$"></li><li><img src="ASySPrac05CarlosMartinez_eq04052079667178548877.png" alt="$a_{0}=\frac{-2}{\pi}(e^{\frac{-\pi}{2}}-1)=0.5042$"></li><li><img src="ASySPrac05CarlosMartinez_eq00625565354475340822.png" alt="$a_{n}=0.504(\frac{2}{1+16n^2})$"></li><li><img src="ASySPrac05CarlosMartinez_eq04108984236777671564.png" alt="$b_{n}=0.504(\frac{8n}{1+16n^2})$"></li><li><img src="ASySPrac05CarlosMartinez_eq06349420774633397513.png" alt="$Sf(t)=0.504+[1+\sum_{n=1}^{\infty}\frac{2}{1+16n^2}(\cos(2nt)+4n\sin(2nt))]$"></li></ul></div><p><b>4 ARMONICOS</b></p><p><img vspace="5" hspace="5" src="E_6_1.PNG" alt=""> </p><p><b>15 ARMONICOS</b></p><p><img vspace="5" hspace="5" src="E_6_1_2.PNG" alt=""> </p><h2 id="4">Ejemplo 6.2</h2><p>Con serie y espectro exponencial y A=3, no es necesario entregar el c&oacute;digo, solo la aplicaci&oacute;n al problema especifico, debe de indicar la funci&oacute;n y los valores de sus coeficientes (sin incluir el procedimiento).</p><div><ul><li>Funci&oacute;n</li></ul></div><p><img vspace="5" hspace="5" src="EC6_2.gif" alt=""> </p><div><ul><li><img src="ASySPrac05CarlosMartinez_eq16266160074245195707.png" alt="$T_{0}=2$">; <img src="ASySPrac05CarlosMartinez_eq16968267925928478875.png" alt="$\omega_{0}=\pi$"></li><li><img src="ASySPrac05CarlosMartinez_eq12351201383937949383.png" alt="$a_{0}=0$"></li><li><img src="ASySPrac05CarlosMartinez_eq18033571242204942981.png" alt="$a_{n}=0$"></li><li><img src="ASySPrac05CarlosMartinez_eq10518071608321475585.png" alt="$b_{n}=\frac{24}{(n\pi)^2} \sin(\frac{n\pi}{2})$"></li><li><img src="ASySPrac05CarlosMartinez_eq07742563118262782240.png" alt="$Sf(t)=\frac{24}{\pi^2}\sum_{n=1}^{\infty }[\cos(n\pi t+\theta_n)]$"></li></ul></div><p><b>4 ARMONICOS</b></p><p><img vspace="5" hspace="5" src="E_6_2_1.PNG" alt=""> </p><p><b>15 ARMONICOS</b></p><p><img vspace="5" hspace="5" src="E_6_2_2.PNG" alt=""> </p><h2 id="5">Ejemplo 6.4</h2><p>Con serie y espectro exponencial,  no es necesario entregar el c&oacute;digo, solo la aplicaci&oacute;n al problema especifico, debe de indicar la funci&oacute;n y los valores de sus coeficientes (sin incluir el procedimiento)</p><div><ul><li>Funci&oacute;n: <img src="ASySPrac05CarlosMartinez_eq06509375914648683501.png" alt="$rect(\frac{t}{\pi})$"></li><li><img src="ASySPrac05CarlosMartinez_eq06506973037403274391.png" alt="$T_{0}=2\pi$">; <img src="ASySPrac05CarlosMartinez_eq12751951983705960039.png" alt="$\omega_{0}=1$"></li><li><img src="ASySPrac05CarlosMartinez_eq00220859804390540809.png" alt="$a_{0}=\frac{1}{2}$"></li><li><img src="ASySPrac05CarlosMartinez_eq18169518009886506725.png" alt="$a_{n}=\frac{2}{n\pi} \sin(\frac{n\pi}{2})$"></li><li><img src="ASySPrac05CarlosMartinez_eq11244947500573341312.png" alt="$b_{n}=0$"></li><li><img src="ASySPrac05CarlosMartinez_eq04844439589351996345.png" alt="$Sf(t)=\frac{1}{2}+\frac{2}{\pi}\sum_{n=1}^{\infty }[\sin(\frac{n\pi}{2})\cos(nt+\theta_n)]$"></li></ul></div><h2 id="6">Apendice A</h2><p>Puede consultar los codigos de programaci&oacute;n de cada uno de los ejercicios en la siguiente <a href="https://drive.google.com/open?id=1M2Llttzbg_FAM7OpAit81kZCiaLKFyxO">carpeta</a></p><h2 id="7">Referencias</h2><div><ol><li>Lathi, B. (2005). <i>Linear Systems and Signals</i>. E.U.A.: Oxford University Press</li><li>Moore, H. (2009). <i>MATLAB for Engineers.</i> E.U.A.: Prentice Hall.</li><li>Ashok Ambardar. (1999). Analog and Digital Signal Processing. M&eacute;xico D. F., M&eacute;xico: BROOKS/COLE PUBLISHING COMPANY.</li><li>Hwei P. Hsu. (2013). Se&ntilde;ales y Sistemas. M&eacute;xico D. F., M&eacute;xico: McGrawHill.</li></ol></div><p class="footer"><br><a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2018a</a><br></p></div><!--
+##### SOURCE BEGIN #####
+%%
+%
+% <<portada.png>>
+%% Objetivos
+%% Desarrollo
+% Se plantea la solución a siete problemas, donde cada uno requiere del
+% uso de Matlab como herramienta de cálculo y análisis.
+%
+% Para cada problema debes de realizar 
+% 
+% # Realizar el programa de la serie que se indica
+% # Gráfica de la serie de Fourier en un intervalo que muestre 5 repeticiones
+% # Gráfica de la señal y la serie de Fourier para 4 armonicos
+% # Gráfica del error
+% # Gráfica de la energía del error
+% # Espectro de magnitud  para 4 armonicos
+% # Espectro de fase para 4 armonicos
+% # Todo lo anterior para 15 armonicos
+%% Ejemplo 6.1
+% Con serie  y espectro trigonometrico, no es necesario entregar el código, solo la aplicación al problema especifico,
+% debe de indicar la función y los valores de sus coeficientes (sin incluir el procedimiento)
+%
+% * Función: $e^{-t/2}$
+% * $T_{0}=\pi$; $\omega_{0}=2$
+% * $\omega_{0}=2$
+% * $a_{0}=\frac{-2}{\pi}(e^{\frac{-\pi}{2}}-1)=0.5042$
+% * $a_{n}=0.504(\frac{2}{1+16n^2})$
+% * $b_{n}=0.504(\frac{8n}{1+16n^2})$
+% * $Sf(t)=0.504+[1+\sum_{n=1}^{\infty}\frac{2}{1+16n^2}(\cos(2nt)+4n\sin(2nt))]$
+%
+% *4 ARMONICOS*
+% 
+% <<E_6_1.PNG>>
+% 
+% *15 ARMONICOS*
+% 
+% <<E_6_1_2.PNG>>
+% 
+%% Ejemplo 6.2
+% Con serie y espectro exponencial y A=3, no es necesario entregar el código, solo la aplicación al problema especifico,
+% debe de indicar la función y los valores de sus coeficientes (sin incluir
+% el procedimiento).
+%
+% * Función
+%
+% <<EC6_2.gif>>
+% 
+% * $T_{0}=2$; $\omega_{0}=\pi$
+% * $a_{0}=0$
+% * $a_{n}=0$
+% * $b_{n}=\frac{24}{(n\pi)^2} \sin(\frac{n\pi}{2})$
+% * $Sf(t)=\frac{24}{\pi^2}\sum_{n=1}^{\infty }[\cos(n\pi t+\theta_n)]$
+%
+% *4 ARMONICOS*
+% 
+% <<E_6_2_1.PNG>>
+% 
+% *15 ARMONICOS*
+% 
+% <<E_6_2_2.PNG>>
+% 
+%% Ejemplo 6.4
+% Con serie y espectro exponencial,  no es necesario entregar el código, solo la aplicación al problema especifico,
+% debe de indicar la función y los valores de sus coeficientes (sin incluir el procedimiento)
+%
+% * Función: $rect(\frac{t}{\pi})$
+% * $T_{0}=2\pi$; $\omega_{0}=1$
+% * $a_{0}=\frac{1}{2}$
+% * $a_{n}=\frac{2}{n\pi} \sin(\frac{n\pi}{2})$
+% * $b_{n}=0$
+% * $Sf(t)=\frac{1}{2}+\frac{2}{\pi}\sum_{n=1}^{\infty }[\sin(\frac{n\pi}{2})\cos(nt+\theta_n)]$
+%% Apendice A
+% Puede consultar los codigos de programación de cada uno de los ejercicios
+% en la siguiente <https://drive.google.com/open?id=1M2Llttzbg_FAM7OpAit81kZCiaLKFyxO carpeta>
+%% Referencias
+% # Lathi, B. (2005). _Linear Systems and Signals_. E.U.A.: Oxford University Press
+% # Moore, H. (2009). _MATLAB for Engineers._ E.U.A.: Prentice Hall.
+% # Ashok Ambardar. (1999). Analog and Digital Signal Processing. México D. F., México: BROOKS/COLE PUBLISHING COMPANY.
+% # Hwei P. Hsu. (2013). Señales y Sistemas. México D. F., México: McGrawHill.
+##### SOURCE END #####
+--></body></html>
