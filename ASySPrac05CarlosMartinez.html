@@ -6,7 +6,7 @@
    <!--
 This HTML was auto-generated from MATLAB code.
 To make changes, update the MATLAB code and republish this document.
-      --><title>ASySPrac05CarlosMartinez</title><meta name="generator" content="MATLAB 9.4"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2018-11-23"><meta name="DC.source" content="ASySPrac05CarlosMartinez.m"><style type="text/css">
+      --><title>ASySPrac05CarlosMartinez</title><meta name="generator" content="MATLAB 9.4"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2018-11-24"><meta name="DC.source" content="ASySPrac05CarlosMartinez.m"><style type="text/css">
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
 
 html { min-height:100%; margin-bottom:1px; }
@@ -66,12 +66,172 @@ table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px soli
 
 
 
-  </style></head><body><div class="content"><h1></h1><!--introduction--><p><img vspace="5" hspace="5" src="portada.png" alt=""> </p><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Objetivos</a></li><li><a href="#2">Desarrollo</a></li><li><a href="#3">Ejemplo 6.1</a></li><li><a href="#4">Ejemplo 6.2</a></li><li><a href="#5">Ejemplo 6.4</a></li><li><a href="#6">Apendice A</a></li><li><a href="#7">Referencias</a></li></ul></div><h2 id="1">Objetivos</h2><h2 id="2">Desarrollo</h2><p>Se plantea la soluci&oacute;n a siete problemas, donde cada uno requiere del uso de Matlab como herramienta de c&aacute;lculo y an&aacute;lisis.</p><p>Para cada problema debes de realizar</p><div><ol><li>Realizar el programa de la serie que se indica</li><li>Gr&aacute;fica de la serie de Fourier en un intervalo que muestre 5 repeticiones</li><li>Gr&aacute;fica de la se&ntilde;al y la serie de Fourier para 4 armonicos</li><li>Gr&aacute;fica del error</li><li>Gr&aacute;fica de la energ&iacute;a del error</li><li>Espectro de magnitud  para 4 armonicos</li><li>Espectro de fase para 4 armonicos</li><li>Todo lo anterior para 15 armonicos</li></ol></div><h2 id="3">Ejemplo 6.1</h2><p>Con serie  y espectro trigonometrico, no es necesario entregar el c&oacute;digo, solo la aplicaci&oacute;n al problema especifico, debe de indicar la funci&oacute;n y los valores de sus coeficientes (sin incluir el procedimiento)</p><div><ul><li>Funci&oacute;n: <img src="ASySPrac05CarlosMartinez_eq13118065478009486998.png" alt="$e^{-t/2}$"></li><li><img src="ASySPrac05CarlosMartinez_eq11824749991346166048.png" alt="$T_{0}=\pi$">; <img src="ASySPrac05CarlosMartinez_eq08880996788032574097.png" alt="$\omega_{0}=2$"></li><li><img src="ASySPrac05CarlosMartinez_eq08880996788032574097.png" alt="$\omega_{0}=2$"></li><li><img src="ASySPrac05CarlosMartinez_eq04052079667178548877.png" alt="$a_{0}=\frac{-2}{\pi}(e^{\frac{-\pi}{2}}-1)=0.5042$"></li><li><img src="ASySPrac05CarlosMartinez_eq00625565354475340822.png" alt="$a_{n}=0.504(\frac{2}{1+16n^2})$"></li><li><img src="ASySPrac05CarlosMartinez_eq04108984236777671564.png" alt="$b_{n}=0.504(\frac{8n}{1+16n^2})$"></li><li><img src="ASySPrac05CarlosMartinez_eq06349420774633397513.png" alt="$Sf(t)=0.504+[1+\sum_{n=1}^{\infty}\frac{2}{1+16n^2}(\cos(2nt)+4n\sin(2nt))]$"></li></ul></div><p><b>4 ARMONICOS</b></p><p><img vspace="5" hspace="5" src="E_6_1.PNG" alt=""> </p><p><b>15 ARMONICOS</b></p><p><img vspace="5" hspace="5" src="E_6_1_2.PNG" alt=""> </p><h2 id="4">Ejemplo 6.2</h2><p>Con serie y espectro exponencial y A=3, no es necesario entregar el c&oacute;digo, solo la aplicaci&oacute;n al problema especifico, debe de indicar la funci&oacute;n y los valores de sus coeficientes (sin incluir el procedimiento).</p><div><ul><li>Funci&oacute;n</li></ul></div><p><img vspace="5" hspace="5" src="EC6_2.gif" alt=""> </p><div><ul><li><img src="ASySPrac05CarlosMartinez_eq16266160074245195707.png" alt="$T_{0}=2$">; <img src="ASySPrac05CarlosMartinez_eq16968267925928478875.png" alt="$\omega_{0}=\pi$"></li><li><img src="ASySPrac05CarlosMartinez_eq12351201383937949383.png" alt="$a_{0}=0$"></li><li><img src="ASySPrac05CarlosMartinez_eq18033571242204942981.png" alt="$a_{n}=0$"></li><li><img src="ASySPrac05CarlosMartinez_eq10518071608321475585.png" alt="$b_{n}=\frac{24}{(n\pi)^2} \sin(\frac{n\pi}{2})$"></li><li><img src="ASySPrac05CarlosMartinez_eq07742563118262782240.png" alt="$Sf(t)=\frac{24}{\pi^2}\sum_{n=1}^{\infty }[\cos(n\pi t+\theta_n)]$"></li></ul></div><p><b>4 ARMONICOS</b></p><p><img vspace="5" hspace="5" src="E_6_2_1.PNG" alt=""> </p><p><b>15 ARMONICOS</b></p><p><img vspace="5" hspace="5" src="E_6_2_2.PNG" alt=""> </p><h2 id="5">Ejemplo 6.4</h2><p>Con serie y espectro exponencial,  no es necesario entregar el c&oacute;digo, solo la aplicaci&oacute;n al problema especifico, debe de indicar la funci&oacute;n y los valores de sus coeficientes (sin incluir el procedimiento)</p><div><ul><li>Funci&oacute;n: <img src="ASySPrac05CarlosMartinez_eq06509375914648683501.png" alt="$rect(\frac{t}{\pi})$"></li><li><img src="ASySPrac05CarlosMartinez_eq06506973037403274391.png" alt="$T_{0}=2\pi$">; <img src="ASySPrac05CarlosMartinez_eq12751951983705960039.png" alt="$\omega_{0}=1$"></li><li><img src="ASySPrac05CarlosMartinez_eq00220859804390540809.png" alt="$a_{0}=\frac{1}{2}$"></li><li><img src="ASySPrac05CarlosMartinez_eq18169518009886506725.png" alt="$a_{n}=\frac{2}{n\pi} \sin(\frac{n\pi}{2})$"></li><li><img src="ASySPrac05CarlosMartinez_eq11244947500573341312.png" alt="$b_{n}=0$"></li><li><img src="ASySPrac05CarlosMartinez_eq04844439589351996345.png" alt="$Sf(t)=\frac{1}{2}+\frac{2}{\pi}\sum_{n=1}^{\infty }[\sin(\frac{n\pi}{2})\cos(nt+\theta_n)]$"></li></ul></div><h2 id="6">Apendice A</h2><p>Puede consultar los codigos de programaci&oacute;n de cada uno de los ejercicios en la siguiente <a href="https://drive.google.com/open?id=1M2Llttzbg_FAM7OpAit81kZCiaLKFyxO">carpeta</a></p><h2 id="7">Referencias</h2><div><ol><li>Lathi, B. (2005). <i>Linear Systems and Signals</i>. E.U.A.: Oxford University Press</li><li>Moore, H. (2009). <i>MATLAB for Engineers.</i> E.U.A.: Prentice Hall.</li><li>Ashok Ambardar. (1999). Analog and Digital Signal Processing. M&eacute;xico D. F., M&eacute;xico: BROOKS/COLE PUBLISHING COMPANY.</li><li>Hwei P. Hsu. (2013). Se&ntilde;ales y Sistemas. M&eacute;xico D. F., M&eacute;xico: McGrawHill.</li></ol></div><p class="footer"><br><a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2018a</a><br></p></div><!--
+  </style></head><body><div class="content"><h1></h1><!--introduction--><p><img vspace="5" hspace="5" src="portada.png" alt=""> </p><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Objetivos</a></li><li><a href="#2">Introducci&oacute;n</a></li><li><a href="#6">Desarrollo</a></li><li><a href="#7">Ejemplo 6.1</a></li><li><a href="#8">Ejemplo 6.2</a></li><li><a href="#9">Ejemplo 6.4</a></li><li><a href="#10">Ejemplo 6.5</a></li><li><a href="#11">Ejemplo 6.7</a></li><li><a href="#12">Apendice A</a></li><li><a href="#13">Referencias</a></li></ul></div><h2 id="1">Objetivos</h2><div><ul><li>Realizar gr&aacute;ficas de series de Fourier exponenciales y trigonom&eacute;tricas en tiempo continuo</li><li>Manipulaci&oacute;n de instrucciones en MATLAB</li><li>Calculo n&uacute;merico de los coeficientes de Fourier</li></ul></div><h2 id="2">Introducci&oacute;n</h2><p><b>C&aacute;lculo Num&eacute;rico de <img src="ASySPrac05CarlosMartinez_eq03133091047579261816.png" alt="$$D_{n}$"></b></p><p>Podemos calcular los coeficientes <img src="ASySPrac05CarlosMartinez_eq03133091047579261816.png" alt="$$D_{n}$"> utilizando la DFT (Transformada en Tiempo Discreto de Fourier), la cual utiliza valores de una se&ntilde;al peri&oacute;dica <img src="ASySPrac05CarlosMartinez_eq06787901769351252476.png" alt="$$x(t)$"> en un periodo. El intervalo de muestra es <img src="ASySPrac05CarlosMartinez_eq02589007036273142695.png" alt="$$T$"> segundos. Por ende, no hay un <img src="ASySPrac05CarlosMartinez_eq08690732402086695052.png" alt="$$N_{0}=\frac{T_{0}}{T}$"> n&uacute;mero de valores en un periodo <img src="ASySPrac05CarlosMartinez_eq06981539848353791525.png" alt="$$T_{0}$">. Para encontrar la relaci&oacute;n entre <img src="ASySPrac05CarlosMartinez_eq05748192556839433106.png" alt="$$D_{0}$"> y los valores de <img src="ASySPrac05CarlosMartinez_eq06787901769351252476.png" alt="$$x(t)$">, consid&eacute;rese lo siguiente:</p><p><img src="ASySPrac05CarlosMartinez_eq07636666084664264127.png" alt="$$D_{n}= \frac{1}{T_{0}} \int_{T_{0}}^{ }x(t) e^{-jn\omega_{0}t} dt$"></p><p><img src="ASySPrac05CarlosMartinez_eq06895279643630208614.png" alt="$$=\lim_{T\rightarrow 0}\frac{1}{N_{0}T}\sum_{k=0}^{N_{0}-1}x(kT)e^{-jn\omega _{0}kT} T$"></p><p><img src="ASySPrac05CarlosMartinez_eq08715929903193946711.png" alt="$$=\lim_{T\rightarrow 0}\frac{1}{N_{0}}\sum_{k=0}^{N_{0}-1}x(kT)e^{-jn\Omega _{0}k}$"></p><p>(a)</p><p>Donde <img src="ASySPrac05CarlosMartinez_eq03720239181881603886.png" alt="$$x(KT)$"> es el <img src="ASySPrac05CarlosMartinez_eq15696396272955440062.png" alt="$$k$">-&eacute;simo valor de <img src="ASySPrac05CarlosMartinez_eq06787901769351252476.png" alt="$$x(t)$"> y</p><p><img src="ASySPrac05CarlosMartinez_eq08690732402086695052.png" alt="$$N_{0}=\frac{T_{0}}{T}$">   <img src="ASySPrac05CarlosMartinez_eq07215256263371917978.png" alt="$$\Omega_{0}=\omega_{0}T=\frac{2\pi}{N_{0}}$"></p><p>(b)</p><p>En la pr&aacute;ctica, es imposible hacer que <img src="ASySPrac05CarlosMartinez_eq15246491081815649258.png" alt="$$T\rightarrow 0$"> al calcular el lado derecho de la integral de la ecuaci&oacute;n (a). Se puede hacer una <img src="ASySPrac05CarlosMartinez_eq02589007036273142695.png" alt="$$T$"> peque&ntilde;a, aproximarla, pero no hacerla 0, lo cual causar&aacute; que los valores se incrementen sin l&iacute;mite. Entonces, se puede ignorar este l&iacute;mite en <img src="ASySPrac05CarlosMartinez_eq02589007036273142695.png" alt="$$T$"> en la ecuaci&oacute;n (a) con el entendimiento impl&iacute;cito de que <img src="ASySPrac05CarlosMartinez_eq02589007036273142695.png" alt="$$T$"> es razonablemente peque&ntilde;o. Cualquier valor no igual a cero de <img src="ASySPrac05CarlosMartinez_eq02589007036273142695.png" alt="$$T$"> causar&aacute; un error de c&aacute;lculo, el cual es inevitable en cualquier evaluaci&oacute;n num&eacute;rica de la integral. El error resultante del valor no igual a cero <img src="ASySPrac05CarlosMartinez_eq02589007036273142695.png" alt="$$T$"> se llama error de interferencia.</p><p><img src="ASySPrac05CarlosMartinez_eq12280995613715959205.png" alt="$$D_{n}=\frac{1}{N_{0}}\sum_{k=0}^{N_{0}-1}x(kT)e^{-jn\Omega _{0}k}$"></p><p>(c)</p><p>Ahora, de la ecuaci&oacute;n (b), <img src="ASySPrac05CarlosMartinez_eq10515223849776201851.png" alt="$$\Omega_{0}N_{0}=2\pi$">. Por ende, <img src="ASySPrac05CarlosMartinez_eq13755088688593220289.png" alt="$$e^{j\Omega_{0}(k+N_{0})}=e^{j\Omega_{0}k}$">, y por la ecuaci&oacute;n (c), se determina que</p><p><img src="ASySPrac05CarlosMartinez_eq00108646522931943518.png" alt="$$D_{n+N_{0}}=D_{0}$"></p><p>(d)</p><p>La propiedad de periodicidad, <img src="ASySPrac05CarlosMartinez_eq18318370555517747369.png" alt="$$D_{n+N_{0}}=D_{n}$">, establece que m&aacute;s all&aacute; de <img src="ASySPrac05CarlosMartinez_eq02263361073932095650.png" alt="$$n=\frac{N_{0}}{2}$">, los coeficientes representan valores para <img src="ASySPrac05CarlosMartinez_eq12418905687293652924.png" alt="$$n$"> negativas. Por ejemplo, cuando <img src="ASySPrac05CarlosMartinez_eq07114384757973001169.png" alt="$$N_{0}=32, D_{17}=D_{-15},D_{18}=D_{-14}, ..., D_{31}=D_{-1}$">. El ciclo se repite de nuevo desde <img src="ASySPrac05CarlosMartinez_eq15275483857193680460.png" alt="$$n=32$"> en adelante.</p><p>Una vez establecido lo anterior, se proceder&aacute; a utilizar el algoritmo de la Transformada R&aacute;pida de Fourier.</p><p><b>Ejemplo C6.4</b> Realizar el c&aacute;lculo y graficar los espectros trigonom&eacute;tricos y exponenciales de Fourier para la se&ntilde;al peri&oacute;dica en la figura 1).</p><p><img vspace="5" hspace="5" src="fig6_2.PNG" alt=""> </p><p>Figura 1): <img src="ASySPrac05CarlosMartinez_eq06992645021434473590.png" alt="$$e^{\frac{-t}{2}}$"></p><p>Los valores de <img src="ASySPrac05CarlosMartinez_eq06787901769351252476.png" alt="$$x(t)$"> comienzan en <img src="ASySPrac05CarlosMartinez_eq13843076059956794891.png" alt="$$t=0$"> y el &uacute;ltimo <img src="ASySPrac05CarlosMartinez_eq10571137224007435704.png" alt="$$N_{0}$">-&eacute;simo valor est&aacute; en <img src="ASySPrac05CarlosMartinez_eq03844446236828016518.png" alt="$$t=T_{0}-t$">. En los puntos de discontinuidades, el valor de la se&ntilde;al es el promedio de los valores de la funci&oacute;n en ambos lados de la discontinuidad. Por ello, el valor de la se&ntilde;al en <img src="ASySPrac05CarlosMartinez_eq13843076059956794891.png" alt="$$t=0$"> no es <img src="ASySPrac05CarlosMartinez_eq16330746974462534095.png" alt="$$1$">, sino <img src="ASySPrac05CarlosMartinez_eq03400279375274242494.png" alt="$$\frac{e^{\frac{-\pi}{2}}+1}{2}=0.604$">.</p><p>Para determinar el valor <img src="ASySPrac05CarlosMartinez_eq10571137224007435704.png" alt="$$N_{0}$">, se requiere que <img src="ASySPrac05CarlosMartinez_eq03133091047579261816.png" alt="$$D_{n}$"> para <img src="ASySPrac05CarlosMartinez_eq12069270178252804518.png" alt="$$n\geq \frac{N_{0}}{2}$"> sea omisible. Debido a que <img src="ASySPrac05CarlosMartinez_eq06787901769351252476.png" alt="$$x(t)$"> tiene una discontinuidad de salto, <img src="ASySPrac05CarlosMartinez_eq03133091047579261816.png" alt="$$D_{n}$"> decrece lentamente tal como <img src="ASySPrac05CarlosMartinez_eq07780359900859401847.png" alt="$$\frac{1}{n}$">. Por consiguiente, escoger <img src="ASySPrac05CarlosMartinez_eq01860315777495353505.png" alt="$$N_{0}=200$"> es aceptable porque el <i>cien</i> <img src="ASySPrac05CarlosMartinez_eq08790595157310007747.png" alt="$$\frac{N_{0}}{2}$"> <i>&eacute;simo</i> arm&oacute;nico es aproximadamente <img src="ASySPrac05CarlosMartinez_eq03937376032575191794.png" alt="$$1\%$"> del fundamental. Sin embargo, tambi&eacute;n se requiere <img src="ASySPrac05CarlosMartinez_eq10571137224007435704.png" alt="$$N_{0}$"> con potencia <img src="ASySPrac05CarlosMartinez_eq11130003120088913495.png" alt="$$2$">. Por ello, se toma <img src="ASySPrac05CarlosMartinez_eq14246196360969256404.png" alt="$$N_{0}=256=2$">.</p><p><b>Primero, se establecen los par&aacute;metros b&aacute;sicos:</b></p><pre class="codeinput">T_0=pi;
+N_0=256;
+T=T_0/N_0;
+t=(0:T:T*(N_0-1))';
+M=10;
+x=exp(-t/2);
+x(1)=(exp(-pi/2)+1)/2;
+</pre><p><b>Despu&eacute;s, la Transformada en Tiempo Discreto de Fourier se calcula en t&eacute;rminos de la funci&oacute;n <img src="ASySPrac05CarlosMartinez_eq17080548601280760336.png" alt="$$fft$">, se usa para aproximar el espectro exponencial de Fourier comprendido entre <img src="ASySPrac05CarlosMartinez_eq02628528386322507141.png" alt="$$-M\leq n \leq M$"></b></p><pre class="codeinput">D_n = fft (x)/N_0;
+n = [-N_0/2:N_0/2-1]';
+clf;
+subplot (2, 2, 1);
+stem(n, abs(fftshift (D_n)),<span class="string">'k'</span>);
+axis ([-M M -.1 .6]);
+xlabel(<span class="string">'n'</span>);
+ylabel(<span class="string">'|D_n|'</span>);
+subplot (2, 2, 2);
+stem(n, angle(fftshift(D_n)),<span class="string">'k'</span>);
+axis([-M M -pi pi]);
+xlabel (<span class="string">'n'</span>);
+ylabel(<span class="string">'\angle D n [rad]'</span>);
+<span class="comment">% *El espectro de Fourier aproximado en el intervalo $$0\leq n \leq M$ sigue a continuaci&oacute;n.*</span>
+n = [0:M];
+C_n(1) = abs(D_n(1));
+C_n(2:M+1) = 2*abs (D_n(2:M+1));
+theta_n(1) = angle(D_n(1));
+theta_n(2:M+1) = angle(D_n(2:M+1));
+subplot (2, 2, 3);
+stem(n,C_n,<span class="string">'k'</span>);
+xlabel (<span class="string">'n'</span>);
+ylabel(<span class="string">'C_n'</span>);
+subplot (2, 2, 4);
+stem(n,theta_n,<span class="string">'k'</span>);
+xlabel (<span class="string">'n'</span>);
+ylabel(<span class="string">'\theta n [rad]'</span>);
+</pre><img vspace="5" hspace="5" src="ASySPrac05CarlosMartinez_01.png" alt=""> <h2 id="6">Desarrollo</h2><p>Se plantea la soluci&oacute;n a siete problemas, donde cada uno requiere del uso de Matlab como herramienta de c&aacute;lculo y an&aacute;lisis.</p><p>Para cada problema debes de realizar</p><div><ol><li>Realizar el programa de la serie que se indica</li><li>Gr&aacute;fica de la serie de Fourier en un intervalo que muestre 5 repeticiones</li><li>Gr&aacute;fica de la se&ntilde;al y la serie de Fourier para 4 armonicos</li><li>Gr&aacute;fica del error</li><li>Gr&aacute;fica de la energ&iacute;a del error</li><li>Espectro de magnitud  para 4 armonicos</li><li>Espectro de fase para 4 armonicos</li><li>Todo lo anterior para 15 armonicos</li></ol></div><h2 id="7">Ejemplo 6.1</h2><p>Con serie  y espectro trigonometrico, no es necesario entregar el c&oacute;digo, solo la aplicaci&oacute;n al problema especifico, debe de indicar la funci&oacute;n y los valores de sus coeficientes (sin incluir el procedimiento)</p><div><ul><li>Funci&oacute;n: <img src="ASySPrac05CarlosMartinez_eq13118065478009486998.png" alt="$e^{-t/2}$"></li><li><img src="ASySPrac05CarlosMartinez_eq11824749991346166048.png" alt="$T_{0}=\pi$">; <img src="ASySPrac05CarlosMartinez_eq08880996788032574097.png" alt="$\omega_{0}=2$"></li><li><img src="ASySPrac05CarlosMartinez_eq08880996788032574097.png" alt="$\omega_{0}=2$"></li><li><img src="ASySPrac05CarlosMartinez_eq04052079667178548877.png" alt="$a_{0}=\frac{-2}{\pi}(e^{\frac{-\pi}{2}}-1)=0.5042$"></li><li><img src="ASySPrac05CarlosMartinez_eq00625565354475340822.png" alt="$a_{n}=0.504(\frac{2}{1+16n^2})$"></li><li><img src="ASySPrac05CarlosMartinez_eq04108984236777671564.png" alt="$b_{n}=0.504(\frac{8n}{1+16n^2})$"></li><li><img src="ASySPrac05CarlosMartinez_eq06349420774633397513.png" alt="$Sf(t)=0.504+[1+\sum_{n=1}^{\infty}\frac{2}{1+16n^2}(\cos(2nt)+4n\sin(2nt))]$"></li></ul></div><p><b>4 ARMONICOS</b></p><p><img vspace="5" hspace="5" src="E_6_1.PNG" alt=""> </p><p><b>15 ARMONICOS</b></p><p><img vspace="5" hspace="5" src="E_6_1_2.PNG" alt=""> </p><h2 id="8">Ejemplo 6.2</h2><p>Con serie y espectro exponencial y A=3, no es necesario entregar el c&oacute;digo, solo la aplicaci&oacute;n al problema especifico, debe de indicar la funci&oacute;n y los valores de sus coeficientes (sin incluir el procedimiento).</p><div><ul><li>Funci&oacute;n</li></ul></div><p><img vspace="5" hspace="5" src="EC6_2.gif" alt=""> </p><div><ul><li><img src="ASySPrac05CarlosMartinez_eq16266160074245195707.png" alt="$T_{0}=2$">; <img src="ASySPrac05CarlosMartinez_eq16968267925928478875.png" alt="$\omega_{0}=\pi$"></li><li><img src="ASySPrac05CarlosMartinez_eq12351201383937949383.png" alt="$a_{0}=0$"></li><li><img src="ASySPrac05CarlosMartinez_eq18033571242204942981.png" alt="$a_{n}=0$"></li><li><img src="ASySPrac05CarlosMartinez_eq10518071608321475585.png" alt="$b_{n}=\frac{24}{(n\pi)^2} \sin(\frac{n\pi}{2})$"></li><li><img src="ASySPrac05CarlosMartinez_eq07742563118262782240.png" alt="$Sf(t)=\frac{24}{\pi^2}\sum_{n=1}^{\infty }[\cos(n\pi t+\theta_n)]$"></li></ul></div><p><b>4 ARMONICOS</b></p><p><img vspace="5" hspace="5" src="E_6_2_1.PNG" alt=""> </p><p><b>15 ARMONICOS</b></p><p><img vspace="5" hspace="5" src="E_6_2_2.PNG" alt=""> </p><h2 id="9">Ejemplo 6.4</h2><p>Con serie y espectro exponencial,  no es necesario entregar el c&oacute;digo, solo la aplicaci&oacute;n al problema especifico, debe de indicar la funci&oacute;n y los valores de sus coeficientes (sin incluir el procedimiento)</p><div><ul><li>Funci&oacute;n: <img src="ASySPrac05CarlosMartinez_eq06509375914648683501.png" alt="$rect(\frac{t}{\pi})$"></li><li><img src="ASySPrac05CarlosMartinez_eq06506973037403274391.png" alt="$T_{0}=2\pi$">; <img src="ASySPrac05CarlosMartinez_eq12751951983705960039.png" alt="$\omega_{0}=1$"></li><li><img src="ASySPrac05CarlosMartinez_eq00220859804390540809.png" alt="$a_{0}=\frac{1}{2}$"></li><li><img src="ASySPrac05CarlosMartinez_eq18169518009886506725.png" alt="$a_{n}=\frac{2}{n\pi} \sin(\frac{n\pi}{2})$"></li><li><img src="ASySPrac05CarlosMartinez_eq11244947500573341312.png" alt="$b_{n}=0$"></li><li><img src="ASySPrac05CarlosMartinez_eq04844439589351996345.png" alt="$Sf(t)=\frac{1}{2}+\frac{2}{\pi}\sum_{n=1}^{\infty }[\sin(\frac{n\pi}{2})\cos(nt+\theta_n)]$"></li></ul></div><h2 id="10">Ejemplo 6.5</h2><p>Con serie y espectro exponencial, no es necesario entregar el c&oacute;digo, solo la aplicaci&oacute;n al problema especifico, debe de indicar la funci&oacute;n y los valores de sus coeficientes (sin incluir el procedimiento)</p><div><ul><li>Funci&oacute;n: <img src="ASySPrac05CarlosMartinez_eq09154512819811520631.png" alt="$e^{\frac{-t}{2}}$"></li><li><img src="ASySPrac05CarlosMartinez_eq11824749991346166048.png" alt="$T_{0}=\pi$">; <img src="ASySPrac05CarlosMartinez_eq08880996788032574097.png" alt="$\omega_{0}=2$"></li><li><img src="ASySPrac05CarlosMartinez_eq07697493664557799756.png" alt="$D_0=0.5042$"></li><li><img src="ASySPrac05CarlosMartinez_eq04077528487602250096.png" alt="$D_n=\frac{0.5042}{1+4nj}$"></li><li><img src="ASySPrac05CarlosMartinez_eq05177627897546240063.png" alt="$Sf(t)=0.5042+\sum_{-\infty}^{\infty}\frac{1}{1+4nj}e^{2ntj}$"></li></ul></div><p><b>4 ARMONICOS</b></p><p><img vspace="5" hspace="5" src="E_6_5_1.PNG" alt=""> </p><p><b>15 ARMONICOS</b></p><p><img vspace="5" hspace="5" src="E_6_5_2.PNG" alt=""> </p><h2 id="11">Ejemplo 6.7</h2><p>Con serie y espectro exponencial y <img src="ASySPrac05CarlosMartinez_eq04356084194358646376.png" alt="$T_0=3$"> sin incluir la gr&aacute;fica de f, error ni energ&iacute;a del error,  no es necesario entregar el c&oacute;digo solo la aplicaci&oacute;n al problema especifico,debe de indicar la funci&oacute;n y los valores de sus coeficientes (sin incluir el procedimiento)</p><div><ul><li>Funci&oacute;n: <img src="ASySPrac05CarlosMartinez_eq17703627941563290876.png" alt="$x(t)=\sum_{-\infty}^{\infty}\delta(t-nT_0)$"></li><li><img src="ASySPrac05CarlosMartinez_eq16009704780669162202.png" alt="$T_{0}=3$">; <img src="ASySPrac05CarlosMartinez_eq11448675859542939864.png" alt="$\omega_{0}=\frac{2\pi}{3}$"></li><li><img src="ASySPrac05CarlosMartinez_eq02245658498090361801.png" alt="$D_0=1/T_0$"></li><li><img src="ASySPrac05CarlosMartinez_eq10329010378976998573.png" alt="$D_n=1/T_0$"></li><li><img src="ASySPrac05CarlosMartinez_eq13955843625098673415.png" alt="$Sf(t)=\frac{1}{T_0}\sum_{-\infty}^{\infty}e^{\frac{2\pi ntj}{3}}$"></li></ul></div><p><b>4 ARMONICOS</b></p><p><img vspace="5" hspace="5" src="E_6_7_1.PNG" alt=""> </p><p><b>15 ARMONICOS</b></p><p><img vspace="5" hspace="5" src="E_6_7_2.PNG" alt=""> </p><p>Como se puede observar las fraficas son muy similares</p><h2 id="12">Apendice A</h2><p>Puede consultar los codigos de programaci&oacute;n de cada uno de los ejercicios en la siguiente <a href="https://drive.google.com/open?id=1nvvCm9apsITmdnHP2bAvi94BWLWPilXJ">carpeta</a></p><h2 id="13">Referencias</h2><div><ol><li>Lathi, B. (2005). <i>Linear Systems and Signals</i>. E.U.A.: Oxford University Press</li><li>Moore, H. (2009). <i>MATLAB for Engineers.</i> E.U.A.: Prentice Hall.</li><li>Ashok Ambardar. (1999). Analog and Digital Signal Processing. M&eacute;xico D. F., M&eacute;xico: BROOKS/COLE PUBLISHING COMPANY.</li><li>Hwei P. Hsu. (2013). Se&ntilde;ales y Sistemas. M&eacute;xico D. F., M&eacute;xico: McGrawHill.</li></ol></div><p class="footer"><br><a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2018a</a><br></p></div><!--
 ##### SOURCE BEGIN #####
 %%
 %
 % <<portada.png>>
 %% Objetivos
+% * Realizar gráficas de series de Fourier exponenciales y trigonométricas
+% en tiempo continuo
+% * Manipulación de instrucciones en MATLAB
+% * Calculo númerico de los coeficientes de Fourier
+%% Introducción
+% *Cálculo Numérico de $$D_{n}$*
+%
+% Podemos calcular los coeficientes $$D_{n}$ utilizando la DFT
+% (Transformada en Tiempo Discreto de Fourier), la cual utiliza valores de
+% una señal periódica $$x(t)$ en un periodo. El intervalo de muestra es
+% $$T$ segundos. Por ende, no hay un $$N_{0}=\frac{T_{0}}{T}$ número de
+% valores en un periodo $$T_{0}$. Para encontrar la relación entre $$D_{0}$
+% y los valores de $$x(t)$, considérese lo siguiente:
+%
+% $$D_{n}= \frac{1}{T_{0}} \int_{T_{0}}^{ }x(t) e^{-jn\omega_{0}t} dt$
+% 
+% $$=\lim_{T\rightarrow
+% 0}\frac{1}{N_{0}T}\sum_{k=0}^{N_{0}-1}x(kT)e^{-jn\omega _{0}kT} T$
+%
+% $$=\lim_{T\rightarrow
+% 0}\frac{1}{N_{0}}\sum_{k=0}^{N_{0}-1}x(kT)e^{-jn\Omega _{0}k}$   
+% 
+% (a)
+% 
+% Donde $$x(KT)$ es el $$k$-ésimo valor de $$x(t)$ y
+%
+% $$N_{0}=\frac{T_{0}}{T}$   $$\Omega_{0}=\omega_{0}T=\frac{2\pi}{N_{0}}$
+%
+% (b)
+%
+% En la práctica, es imposible hacer que $$T\rightarrow 0$ al calcular el
+% lado derecho de la integral de la ecuación (a). Se puede hacer una $$T$
+% pequeña, aproximarla, pero no hacerla 0, lo cual causará que los valores se
+% incrementen sin límite. Entonces, se puede ignorar este límite
+% en $$T$ en la ecuación (a) con el entendimiento implícito de que $$T$ es
+% razonablemente pequeño. Cualquier valor no igual a cero de $$T$ causará
+% un error de cálculo, el cual es inevitable en cualquier evaluación
+% numérica de la integral. El error resultante del valor no igual a cero
+% $$T$ se llama error de interferencia.
+%
+% $$D_{n}=\frac{1}{N_{0}}\sum_{k=0}^{N_{0}-1}x(kT)e^{-jn\Omega _{0}k}$ 
+% 
+% (c)
+%
+% Ahora, de la ecuación (b), $$\Omega_{0}N_{0}=2\pi$. Por ende,
+% $$e^{j\Omega_{0}(k+N_{0})}=e^{j\Omega_{0}k}$, y por la ecuación (c), se
+% determina que 
+%
+% $$D_{n+N_{0}}=D_{0}$
+%
+% (d)
+%
+% La propiedad de periodicidad, $$D_{n+N_{0}}=D_{n}$, establece que más
+% allá de $$n=\frac{N_{0}}{2}$, los coeficientes representan valores para
+% $$n$ negativas. Por ejemplo, cuando $$N_{0}=32,
+% D_{17}=D_{-15},D_{18}=D_{-14}, ..., D_{31}=D_{-1}$. El ciclo se repite de
+% nuevo desde $$n=32$ en adelante. 
+%
+% Una vez establecido lo anterior, se procederá a utilizar el algoritmo de
+% la Transformada Rápida de Fourier.
+% 
+% *Ejemplo C6.4*
+% Realizar el cálculo y graficar los espectros trigonométricos y exponenciales de
+% Fourier para la señal periódica en la figura 1). 
+%
+%
+% 
+% <<fig6_2.PNG>>
+%
+% Figura 1): $$e^{\frac{-t}{2}}$
+% 
+% Los valores de $$x(t)$ comienzan en $$t=0$ y el último $$N_{0}$-ésimo
+% valor está en $$t=T_{0}-t$. En los puntos de discontinuidades, el valor
+% de la señal es el promedio de los valores de la función en ambos lados
+% de la discontinuidad. Por ello, el valor de la señal en $$t=0$ no es
+% $$1$, sino $$\frac{e^{\frac{-\pi}{2}}+1}{2}=0.604$.
+%
+% Para determinar el valor $$N_{0}$, se requiere que $$D_{n}$ para $$n\geq
+% \frac{N_{0}}{2}$ sea omisible. Debido a que $$x(t)$ tiene una
+% discontinuidad de salto, $$D_{n}$ decrece lentamente tal como
+% $$\frac{1}{n}$. Por consiguiente, escoger $$N_{0}=200$ es aceptable
+% porque el _cien_ $$\frac{N_{0}}{2}$ _ésimo_ armónico es aproximadamente $$1\%$
+% del fundamental. Sin embargo, también se requiere $$N_{0}$ con potencia
+% $$2$. Por ello, se toma $$N_{0}=256=2$.
+%
+% *Primero, se establecen los parámetros básicos:*
+%%
+T_0=pi;
+N_0=256;
+T=T_0/N_0;
+t=(0:T:T*(N_0-1))';
+M=10;
+x=exp(-t/2);
+x(1)=(exp(-pi/2)+1)/2;
+%%
+% *Después, la Transformada en Tiempo Discreto de Fourier se calcula en
+% términos de la función $$fft$, se usa para aproximar el espectro
+% exponencial de Fourier comprendido entre $$-M\leq n \leq M$*
+%%
+D_n = fft (x)/N_0; 
+n = [-N_0/2:N_0/2-1]';
+clf;
+subplot (2, 2, 1); 
+stem(n, abs(fftshift (D_n)),'k');
+axis ([-M M -.1 .6]); 
+xlabel('n'); 
+ylabel('|D_n|');
+subplot (2, 2, 2); 
+stem(n, angle(fftshift(D_n)),'k');
+axis([-M M -pi pi]); 
+xlabel ('n'); 
+ylabel('\angle D n [rad]');
+% *El espectro de Fourier aproximado en el intervalo $$0\leq n \leq M$ sigue a continuación.*
+n = [0:M]; 
+C_n(1) = abs(D_n(1)); 
+C_n(2:M+1) = 2*abs (D_n(2:M+1));
+theta_n(1) = angle(D_n(1)); 
+theta_n(2:M+1) = angle(D_n(2:M+1));
+subplot (2, 2, 3); 
+stem(n,C_n,'k');
+xlabel ('n'); 
+ylabel('C_n');
+subplot (2, 2, 4); 
+stem(n,theta_n,'k');
+xlabel ('n'); 
+ylabel('\theta n [rad]');
 %% Desarrollo
 % Se plantea la solución a siete problemas, donde cada uno requiere del
 % uso de Matlab como herramienta de cálculo y análisis.
@@ -139,9 +299,46 @@ table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px soli
 % * $a_{n}=\frac{2}{n\pi} \sin(\frac{n\pi}{2})$
 % * $b_{n}=0$
 % * $Sf(t)=\frac{1}{2}+\frac{2}{\pi}\sum_{n=1}^{\infty }[\sin(\frac{n\pi}{2})\cos(nt+\theta_n)]$
+%% Ejemplo 6.5
+% Con serie y espectro exponencial, no es necesario entregar el código, solo la aplicación al problema especifico,
+% debe de indicar la función y los valores de sus coeficientes (sin incluir el procedimiento)
+% 
+% * Función: $e^{\frac{-t}{2}}$
+% * $T_{0}=\pi$; $\omega_{0}=2$
+% * $D_0=0.5042$
+% * $D_n=\frac{0.5042}{1+4nj}$
+% * $Sf(t)=0.5042+\sum_{-\infty}^{\infty}\frac{1}{1+4nj}e^{2ntj}$
+%
+% *4 ARMONICOS*
+% 
+% <<E_6_5_1.PNG>>
+% 
+% *15 ARMONICOS*
+% 
+% <<E_6_5_2.PNG>>
+% 
+%% Ejemplo 6.7
+% Con serie y espectro exponencial y $T_0=3$ sin incluir la gráfica de f, error ni energía del error,  no es necesario entregar el código
+% solo la aplicación al problema especifico,debe de indicar la función y los valores de sus coeficientes (sin incluir el procedimiento)
+% 
+% * Función: $x(t)=\sum_{-\infty}^{\infty}\delta(t-nT_0)$
+% * $T_{0}=3$; $\omega_{0}=\frac{2\pi}{3}$
+% * $D_0=1/T_0$
+% * $D_n=1/T_0$
+% * $Sf(t)=\frac{1}{T_0}\sum_{-\infty}^{\infty}e^{\frac{2\pi ntj}{3}}$
+%
+% *4 ARMONICOS*
+% 
+% <<E_6_7_1.PNG>>
+% 
+% *15 ARMONICOS*
+% 
+% <<E_6_7_2.PNG>>
+% 
+% Como se puede observar las fraficas son muy similares
 %% Apendice A
 % Puede consultar los codigos de programación de cada uno de los ejercicios
-% en la siguiente <https://drive.google.com/open?id=1M2Llttzbg_FAM7OpAit81kZCiaLKFyxO carpeta>
+% en la siguiente <https://drive.google.com/open?id=1nvvCm9apsITmdnHP2bAvi94BWLWPilXJ carpeta>
 %% Referencias
 % # Lathi, B. (2005). _Linear Systems and Signals_. E.U.A.: Oxford University Press
 % # Moore, H. (2009). _MATLAB for Engineers._ E.U.A.: Prentice Hall.
